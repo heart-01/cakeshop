@@ -6,12 +6,22 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>detail</ion-title>
+    <ion-title>รายละเอียด</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
-    {{customer.ID_customer}}
-  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12> 
+        Name : {{customer.name_customer}} 
+      </ion-col>
+      <ion-col col-12>
+        Tel  : {{customer.tel_customer}}
+      </ion-col>
+      <ion-col col-12>
+        User : {{customer.username_customer}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
