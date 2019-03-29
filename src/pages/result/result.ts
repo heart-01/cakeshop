@@ -22,6 +22,7 @@ export class ResultPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public http:Http) {
     let cusKey=this.navParams.get('key'); //สร้างตัวแปร cusKey เก็บค่า key ที่ส่งเข้ามา
     let url="http://localhost:8080/ShowCustomer/searching/" + cusKey; //สร้างตัวแปร url เก็บ http://localhost:8080/ShowCustomer/searching/ แล้วเชื่อมกับ cusKey
+    console.log(url)
     this.http.get(url)
     .map(res=>res.json())
     .subscribe(data=>{ 
