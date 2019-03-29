@@ -11,14 +11,11 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-grid>
-    <ion-row *ngFor="let i of customers">
-      <ion-col col-12>
-        Name : {{i.name_customer}}
-      </ion-col>
-      <ion-col col-12>
-        Tel : {{i.tel_customer}}
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-list>
+    <ion-item *ngFor="let i of customers">
+      <p>Name : {{i.name_customer}}</p>
+      <p>Tel : {{i.tel_customer}}</p>
+      <button ion-button clear item-end (click)="showDetail(i.ID_customer)" >View</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

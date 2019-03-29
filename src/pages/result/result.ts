@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 
 /**
  * Generated class for the ResultPage page.
@@ -28,8 +29,8 @@ export class ResultPage {
     });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ResultPage');
+  showDetail(id){ //เมธอทส่งค่า ID_customer ไปหน้า DetailPage
+    this.navCtrl.push(DetailPage, { ID_customer : id });
   }
 
 }
