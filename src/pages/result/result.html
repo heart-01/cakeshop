@@ -6,10 +6,19 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>result</ion-title>
+    <ion-title>ผลลัพธ์การค้นหา</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row *ngFor="let i of customers">
+      <ion-col col-12>
+        Name : {{i.name_customer}}
+      </ion-col>
+      <ion-col col-12>
+        Tel : {{i.tel_customer}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
