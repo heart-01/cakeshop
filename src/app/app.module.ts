@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpModule } from '@angular/http';
+import { DetailPage } from '../pages/detail/detail';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
+    DetailPage,
     TabsPage
   ],
   imports: [
@@ -32,6 +34,7 @@ import { HttpModule } from '@angular/http';
     AboutPage,
     ContactPage,
     HomePage,
+    DetailPage,
     TabsPage
   ],
   providers: [

@@ -4,6 +4,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { DetailPage } from '../detail/detail';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,6 +20,10 @@ export class HomePage {
       this.customer=data;
     });
     
+  }
+
+  showDetail(id){ //เมธอทส่งค่า ID_customer ไปหน้า DetailPage
+    this.navCtrl.push(DetailPage, { ID_customer : id });
   }
 
 }
