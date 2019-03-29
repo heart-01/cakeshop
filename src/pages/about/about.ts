@@ -14,7 +14,7 @@ export class AboutPage {
 
   findCustomer(){
     console.log(this.data.keyword); //ฟังชั่นเช็คว่ามีการส่งค่าเข้ามาไหม 
-    this.navCtrl.push(ResultPage,{keyword:this.data.keyword})
+    this.navCtrl.push(ResultPage,{key:this.data.keyword})
   }
 
 }
