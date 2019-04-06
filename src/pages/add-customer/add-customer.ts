@@ -14,12 +14,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'add-customer.html',
 })
 export class AddCustomerPage {
-
+  customers={
+    ID_member:"",
+    ID_status:"",
+    name_customer:"",
+    tel_customer:"",
+    username_customer:"",
+    password_customer:"";
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddCustomerPage');
   }
+
+  AddCustomer(){
+    
+  }
+
+
 
 }
