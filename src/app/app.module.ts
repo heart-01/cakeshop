@@ -15,6 +15,7 @@ import { HttpModule } from '@angular/http';
 import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
 import { AddCustomerPage } from '../pages/add-customer/add-customer';
+import { HTTP } from '@ionic-native/http'; //plugin HTTP Native
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AddCustomerPage } from '../pages/add-customer/add-customer';
   imports: [
     BrowserModule,
     HttpModule,
+    HTTP,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
