@@ -1,6 +1,8 @@
 {
   "name": "cakeshop",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "id": "fbbee31a"
 }
