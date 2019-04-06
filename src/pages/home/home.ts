@@ -5,6 +5,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 import { DetailPage } from '../detail/detail';
+import { AddCustomerPage } from '../add-customer/add-customer';
 
 @Component({
   selector: 'page-home',
@@ -24,6 +25,10 @@ export class HomePage {
 
   showDetail(id){ //เมธอทส่งค่า ID_customer ไปหน้า DetailPage
     this.navCtrl.push(DetailPage, { ID_customer : id });
+  }
+
+  showAddCustomer(){
+    this.navCtrl.push(AddCustomerPage);
   }
 
 }

@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-
+  <button ion-button (click)="showAddCustomer()" >Add Customer</button>
   <ion-list>
     <ion-item *ngFor="let i of customer">
         <p>{{i.name_customer}}</p>

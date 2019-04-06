@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
 import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
+import { AddCustomerPage } from '../pages/add-customer/add-customer';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ResultPage } from '../pages/result/result';
     HomePage,
     DetailPage,
     ResultPage,
+    AddCustomerPage,
     TabsPage
   ],
   imports: [
@@ -38,6 +40,7 @@ import { ResultPage } from '../pages/result/result';
     HomePage,
     DetailPage,
     ResultPage,
+    AddCustomerPage,
     TabsPage
   ],
   providers: [
