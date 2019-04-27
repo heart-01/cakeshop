@@ -16,27 +16,27 @@
     <ion-list>
       <ion-item>
         <ion-label floating>รหัสนักศึกษา</ion-label>
-        <ion-input type="text" name="ID_customer" (ngModel)="customer.ID_customer"></ion-input>
+        <ion-input type="text" name="ID_customer" [(ngModel)]="customers.ID_customer"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>รหัสสถานะ</ion-label>
-        <ion-input type="text" name="ID_status" (ngModel)="customer.ID_status"></ion-input>
+        <ion-input type="text" name="ID_status" [(ngModel)]="customers.ID_status"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>ชื่อนักศึกษา</ion-label>
-        <ion-input type="text" name="name_customer" (ngModel)="customer.name_customer"></ion-input>
+        <ion-input type="text" name="name_customer" [(ngModel)]="customers.name_customer"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>เบอร์โทร</ion-label>
-        <ion-input type="text" name="tel_customer" (ngModel)="customer.tel_customer"></ion-input>
+        <ion-input type="text" name="tel_customer" [(ngModel)]="customers.tel_customer"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>ชื่อผู้ใช้</ion-label>
-        <ion-input type="text" name="username_customer" (ngModel)="customer.username_customer"></ion-input>
+        <ion-input type="text" name="username_customer" [(ngModel)]="customers.username_customer"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label floating>รหัสผ่าน</ion-label>
-        <ion-input type="password" name="password_customer" (ngModel)="customer.password_customer"></ion-input>
+        <ion-input type="password" name="password_customer" [(ngModel)]="customers.password_customer"></ion-input>
       </ion-item>
     </ion-list>
 

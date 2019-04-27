@@ -11,11 +11,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HttpModule } from '@angular/http';
 import { DetailPage } from '../pages/detail/detail';
 import { ResultPage } from '../pages/result/result';
 import { AddCustomerPage } from '../pages/add-customer/add-customer';
-import { HTTP } from '@ionic-native/http'; //plugin HTTP Native
+
+//import { HTTP } from '@ionic-native/http'; //plugin HTTP Native เพื่อใช้งาน Http จากภายนอก
+import { HttpModule } from '@angular/http'; // เรียกใช้ HttpModule สำหรับ get ค่าจาก Http
+import { HttpClientModule } from '@angular/common/http'; // import เพื่อใช้งาน Http บนเครื่อง Client
+
 
 @NgModule({
   declarations: [
@@ -27,12 +30,13 @@ import { HTTP } from '@ionic-native/http'; //plugin HTTP Native
     ResultPage,
     AddCustomerPage,
     TabsPage
+    
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    HTTP,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

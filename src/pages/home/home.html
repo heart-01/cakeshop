@@ -2,14 +2,32 @@
   <ion-navbar>
     <ion-title>รายชื่อลูกค้า</ion-title>
   </ion-navbar>
+  <ion-fab right top>
+      <button ion-fab mini (click)="showAddCustomer()" >
+        <ion-icon name="add"></ion-icon>
+      </button>
+  </ion-fab>
+
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="showAddCustomer()" >Add Customer</button>
+      <!--<button ion-button (click)="showAddCustomer()" >Add Customer</button>-->
   <ion-list>
-    <ion-item *ngFor="let i of customer">
+    <ion-item-sliding *ngFor="let i of customer">
+      <ion-item nopadding>
         <p>{{i.name_customer}}</p>
         <button ion-button clear item-end (click)="showDetail(i.ID_customer)" >View</button>
-    </ion-item>
+      </ion-item>
+      
+      <ion-item-options side="right"> <!-- เมื่อเราสไลด์ไปทางขวา -->
+        <button ion-button color="primary" (click)="editData(i.ID_customer)">
+          <ion-icon name="paper"></ion-icon> 
+        </button>
+        <button ion-button color="danger" (click)="showAlert(i.ID_customer)">
+          <ion-icon name="trash"></ion-icon>
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
   </ion-list>
 </ion-content>
